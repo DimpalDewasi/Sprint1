@@ -1,0 +1,24 @@
+:root { --primary: #2f6fed; --bg: #0f172a; --card: #111827; --text: #e5e7eb; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu; background: var(--bg); color: var(--text); }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; padding: 10px 16px; border-radius: 10px; background: var(--primary); color: white; }
+input, select, textarea { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid #334155; background: #0b1220; color: var(--text); }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.card { background: var(--card); padding: 16px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.2); }
+.row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.flex { display:flex; gap:12px; align-items:center; }
+.header { position: sticky; top:0; background: rgba(15,23,42,.7); backdrop-filter: blur(6px); padding: 12px 24px; display:flex; justify-content: space-between; align-items: center; z-index: 50; }
+.brand { font-weight: 800; letter-spacing:.3px; }
+.nav-toggle { position: fixed; top: 12px; right: 12px; }
+.navmenu { position: fixed; top: 60px; right: 12px; background: var(--card); padding: 12px; border-radius: 16px; display: grid; gap:8px; min-width: 220px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border-bottom: 1px solid #1f2937; padding: 10px; text-align: left; }
+th { cursor: pointer; }
+.badge { background: #16a34a; color: #fff; padding: 2px 8px; border-radius: 9999px; font-size: 12px; }
+.badge.expired { background: #ef4444; }
+.badge.active { background: #f59e0b; }
+.modal { position: fixed; inset: 0; display:flex; align-items:center; justify-content:center; background: rgba(0,0,0,.6); }
+.modal .content { background: var(--card); padding: 24px; border-radius: 16px; width: 90%; max-width: 420px; }
+.splash { position: fixed; inset:0; display:flex; align-items:center; justify-content:center; background: #0b1220; z-index: 100; }
+.quote { opacity:.9; font-style: italic; }
